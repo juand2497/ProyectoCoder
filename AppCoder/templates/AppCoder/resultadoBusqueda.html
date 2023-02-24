@@ -1,0 +1,23 @@
+<p>Estamos buscando el: {{nombre_empleado}}</p>
+
+
+{% if empleado %}
+
+
+<ul>
+{% for n in empleado %}
+    <li> {{n.nombre_empleado}}</li>
+    <li> {{n.puesto}}</li>
+{% endfor %}
+
+
+
+</ul>
+{% else %}
+<p>No se encontraron datos</p>
+
+
+{% endif %}
+
+
+<p style="color: black;">{{respuesta}}</p>

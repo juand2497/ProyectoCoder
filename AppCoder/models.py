@@ -16,7 +16,7 @@ class Cliente(models.Model):
     apellido_cliente = models.CharField(max_length=40)
     telefono = models.IntegerField()
 
-class producto(models.Model):
+class Producto(models.Model):
     nombre_producto = models.CharField(max_length=40)
     valor = models.FloatField()
     fecha = models.DateField()
